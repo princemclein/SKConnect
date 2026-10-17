@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -21,25 +22,81 @@
           <li><a href="#">Projects</a></li>
           <li><a href="#">Youth Concerns</a></li>
         </ul>
+        <div class="nav-actions">
+          <button class="notif-btn" aria-label="Notifications">
+            <i class="fa-regular fa-bell"></i>
+          </button>
+          <a class="signin-btn" href="#">Sign In</a>
+        </div>
       </nav>
     </header>
 
     <main>
       <section class="hero">
         <div class="hero-content">
-          <h1 id="hero-title">Your barangay's SK, in one place.</h1>
+          <h1 id="hero-title">
+            Your barangay's SK,
+            <span class="hero-highlight">all in one place.</span>
+          </h1>
+
           <p>
-            Find announcements, apply for scholarships and other programs, raise
-            concerns, and see how SK funds are spent. No more digging through
-            Facebook posts.
+            Get the latest announcements, apply for scholarships and programs,
+            share your concerns, and see where SK funds go. No more digging
+            through Facebook posts.
           </p>
+
           <div class="hero-actions">
-            <a class="button button-primary" href="#programs"
-              >Browse Programs</a
-            >
-            <a class="button button-secondary" href="#announcements"
-              >Read Announcements</a
-            >
+            <a class="button button-primary" href="#programs">
+              Browse Programs <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a class="button button-secondary" href="#announcements">
+              <i class="fa-solid fa-bullhorn"></i> Read Announcements
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about" id="about">
+        <div class="section-container">
+          <h2 class="section-title">What is <span>SKConnect</span>?</h2>
+          <p class="section-subtitle">
+            A single platform that connects the Sangguniang Kabataan and the
+            youth of the barangay, so information, services, and projects are
+            easy to reach and open to everyone.
+          </p>
+
+          <div class="about-cards">
+            <article class="about-card">
+              <div class="about-icon"><i class="fa-solid fa-bullhorn"></i></div>
+              <h3>Accessible Information</h3>
+              <p>
+                Announcements, programs, and opportunities are all in one place,
+                not buried in social media posts.
+              </p>
+            </article>
+
+            <article class="about-card">
+              <div class="about-icon">
+                <i class="fa-solid fa-file-circle-check"></i>
+              </div>
+              <h3>Easy Services</h3>
+              <p>
+                Check requirements, submit documents online, and track your
+                application without visiting the barangay hall.
+              </p>
+            </article>
+
+            <article class="about-card">
+              <div class="about-icon">
+                <i class="fa-solid fa-chart-pie"></i>
+              </div>
+              <h3>Transparent Governance</h3>
+              <p>
+                See completed projects, their budgets, and breakdowns so
+                everyone knows where SK funds go.
+              </p>
+            </article>
           </div>
         </div>
       </section>
