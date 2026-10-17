@@ -387,3 +387,9 @@ body {
 .announcements-btn {
   margin-top: 3rem;
 }
+
+.announcements-btn:hover {
+  background: var(--color-black);
+  color: var(--color-white);
+  transform: none;
+}
