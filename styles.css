@@ -36,6 +36,9 @@ body {
   );
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
   height: 75px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .main-nav {
