@@ -9,18 +9,32 @@
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif;
+
+  /* Theme colors */
+  --color-primary: #1d4ed8; /* light blue from the header */
+  --color-white: #ffffff;
+  --color-black: #0f172a; /* your dark text color */
+
+  /* Neutrals for backgrounds, body text, and borders */
+  --color-light: #f5f7fb;
+  --color-muted: #475569;
+  --color-border: #e2e8f0;
 }
 
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: #f5f7fb;
+  background: var(--color-light);
 }
 
 /* header */
 .site-header {
-  background: linear-gradient(90deg, #0f172a 0%, #1d4ed8 100%);
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.18);
+  background: linear-gradient(
+    90deg,
+    var(--color-black) 0%,
+    var(--color-primary) 100%
+  );
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
   height: 75px;
 }
 
@@ -57,7 +71,7 @@ body {
 .main-nav a {
   display: inline-block;
   padding: 0.45rem 0.8rem;
-  color: #ffffff;
+  color: var(--color-white);
   text-decoration: none;
   font-size: 0.75rem;
   font-weight: 700;
@@ -80,21 +94,21 @@ body {
   position: relative;
   background: transparent;
   border: none;
-  color: #ffffff;
+  color: var(--color-white);
   font-size: 1.25rem;
   cursor: pointer;
   padding: 0.4rem;
 }
 
 .main-nav .signin-btn {
-  background: #ffffff;
-  color: #1d4ed8;
+  background: var(--color-white);
+  color: var(--color-primary);
   padding: 0.55rem 1.2rem;
   border-radius: 999px;
 }
 
 .main-nav .signin-btn:hover {
-  background: #e0e7ff;
+  background: var(--color-light);
 }
 
 /* Hero Section */
@@ -104,10 +118,10 @@ body {
   padding: 4rem 1.5rem;
   display: grid;
   place-items: center;
-  color: #ffffff;
+  color: var(--color-white);
   text-align: center;
   background:
-    linear-gradient(rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.72)),
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url("assets/hero-bg-img.jpeg") center / cover no-repeat;
 }
 
@@ -124,7 +138,7 @@ body {
 }
 
 .hero-highlight {
-  color: #60a5fa;
+  color: var(--color-primary);
 }
 
 .hero p {
@@ -158,6 +172,7 @@ body {
   text-decoration: none;
   transition:
     background-color 160ms ease,
+    color 160ms ease,
     border-color 160ms ease,
     transform 160ms ease;
 }
@@ -172,17 +187,18 @@ body {
 }
 
 .button:focus-visible {
-  outline: 3px solid #ffffff;
+  outline: 3px solid var(--color-white);
   outline-offset: 4px;
 }
 
 .button-primary {
-  background: #2563eb;
-  color: #ffffff;
+  background: var(--color-primary);
+  color: var(--color-white);
 }
 
 .button-primary:hover {
-  background: #1d4ed8;
+  background: var(--color-white);
+  color: var(--color-primary);
 }
 
 .button-primary:hover i {
@@ -191,40 +207,16 @@ body {
 
 .button-secondary {
   border-color: rgba(255, 255, 255, 0.8);
-  background: rgba(15, 23, 42, 0.2);
-  color: #ffffff;
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--color-white);
 }
 
 .button-secondary:hover {
-  border-color: #ffffff;
+  border-color: var(--color-white);
   background: rgba(255, 255, 255, 0.14);
 }
 
-.hero-highlights {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.75rem 1.75rem;
-  margin: 2.5rem 0 0;
-  padding: 0;
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-
-.hero-highlights i {
-  margin-right: 0.4rem;
-  color: #60a5fa;
-}
-
-/* About Section */
-/* About Section */
-.about {
-  padding: 5rem 1.5rem;
-  background: #f5f7fb;
-}
-
+/* Reusable section styles */
 .section-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -233,21 +225,27 @@ body {
 
 .section-title {
   margin: 0;
-  color: #0f172a;
+  color: var(--color-black);
   font-size: clamp(2rem, 5vw, 3rem);
   letter-spacing: -0.03em;
 }
 
 .section-title span {
-  color: #1d4ed8;
+  color: var(--color-primary);
 }
 
 .section-subtitle {
   max-width: 650px;
   margin: 1rem auto 0;
-  color: #475569;
+  color: var(--color-muted);
   font-size: 1.05rem;
   line-height: 1.5;
+}
+
+/* About Section */
+.about {
+  padding: 5rem 1.5rem;
+  background: var(--color-light);
 }
 
 .about-cards {
@@ -259,9 +257,9 @@ body {
 
 .about-card {
   padding: 2rem 1.5rem;
-  background: #ffffff;
+  background: var(--color-white);
   border-radius: 1.25rem;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   transition:
     transform 160ms ease,
     box-shadow 160ms ease;
@@ -269,7 +267,7 @@ body {
 
 .about-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.14);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14);
 }
 
 .about-icon {
@@ -279,19 +277,110 @@ body {
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 100%);
-  color: #ffffff;
+  background: var(--color-primary);
+  color: var(--color-white);
   font-size: 1.3rem;
 }
 
 .about-card h3 {
   margin: 0 0 0.6rem;
-  color: #0f172a;
+  color: var(--color-black);
   font-size: 1.15rem;
 }
 
 .about-card p {
   margin: 0;
-  color: #475569;
+  color: var(--color-muted);
   line-height: 1.5;
+}
+
+/* Announcements Section */
+.announcements {
+  padding: 5rem 1.5rem;
+  background: var(--color-white);
+}
+
+.announcement-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.announcement-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  background: var(--color-light);
+  border-radius: 1.25rem;
+  border: 1px solid var(--color-border);
+  text-align: left;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.announcement-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.announcement-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 1.1rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.announcement-date {
+  color: var(--color-muted);
+  font-size: 0.8rem;
+}
+
+.announcement-card h3 {
+  margin: 0 0 0.6rem;
+  color: var(--color-black);
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+.announcement-card p {
+  margin: 0 0 1.25rem;
+  color: var(--color-muted);
+  line-height: 1.5;
+}
+
+.read-more {
+  margin-top: auto;
+  color: var(--color-primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.read-more i {
+  margin-left: 0.3rem;
+  transition: transform 160ms ease;
+}
+
+.read-more:hover i {
+  transform: translateX(4px);
+}
+
+.announcements-btn {
+  margin-top: 3rem;
 }
