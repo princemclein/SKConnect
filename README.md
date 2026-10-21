@@ -33,25 +33,6 @@ SK information is often scattered across social media posts, separate files, and
 - JavaScript
 - [Font Awesome](https://fontawesome.com/) (icons)
 
-## Project Structure
-
-```
-SKConnect/
-├── index.html
-├── css/
-│   └── styles.css
-├── assets/
-│   └── images/
-│       ├── logo.png
-│       ├── favicon.png
-│       ├── hero-bg-img.jpeg
-│       ├── council.jpg
-│       ├── barangay-logo.png
-│       ├── sk-logo.png
-│       └── dev-logo.png
-└── README.md
-```
-
 ## Getting Started
 
 1. Clone the repository
