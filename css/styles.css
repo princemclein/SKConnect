@@ -281,8 +281,8 @@ body {
 }
 
 .about-icon {
-  width: 4.25rem;
-  height: 4.25rem;
+  width: 3.75rem;
+  height: 3.75rem;
   margin: 0 0 1.5rem;
   display: grid;
   place-items: center;
@@ -305,9 +305,13 @@ body {
 }
 
 /* Solution Banner */
+.solution {
+  padding: 0 1.5rem;
+}
+
 .solution-banner {
   position: relative;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 5rem auto 0;
   padding: 3.5rem 2rem;
   overflow: hidden;
