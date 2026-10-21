@@ -161,6 +161,10 @@ body {
   margin-top: 2rem;
 }
 
+.hero-actions .button:hover {
+  transform: none;
+}
+
 .button {
   display: inline-flex;
   min-height: 3rem;
