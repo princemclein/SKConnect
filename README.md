@@ -51,6 +51,8 @@ SK information is often scattered across social media posts, separate files, and
 
 **Innovators in Technology**
 
-- Name 1
-- Name 2
-- Name 3
+- Prince Mclein J. Gonzales - **Lead Developer**
+- Alicia Mae Yabut - **Developer**
+- Emily Del Rosario - **Developer**
+- Fernando Tugay Jr. - **Developer**
+- Josaiah Andrew Caminoy - **Developer**
