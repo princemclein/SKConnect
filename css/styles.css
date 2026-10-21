@@ -253,7 +253,7 @@ body {
 /* About Section */
 .about {
   padding: 5rem 1.5rem;
-  background: var(--color-light);
+  background: var(--color-white);
 }
 
 .about-cards {
@@ -297,13 +297,14 @@ body {
 
 /* Solution Banner */
 .solution {
-  padding: 0 1.5rem;
+  padding: 5rem 1.5rem 0;
+  background: var(--color-white);
 }
 
 .solution-banner {
   position: relative;
   max-width: 1200px;
-  margin: 5rem auto 0;
+  margin: 0 auto;
   padding: 3.5rem 2rem;
   overflow: hidden;
   border-radius: 2rem;
