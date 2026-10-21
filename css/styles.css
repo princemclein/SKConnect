@@ -404,3 +404,132 @@ body {
   height: auto;
   display: block;
 }
+
+/* Footer */
+.site-footer {
+  padding: 4rem 1.5rem 0;
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 2.5rem;
+}
+
+.footer-logo {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+.footer-brand p {
+  max-width: 320px;
+  margin: 1rem 0 0;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5;
+}
+
+.footer-partners {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.footer-partners img {
+  height: 3.5rem;
+  width: auto;
+  display: block;
+}
+
+.footer-col h4 {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.7rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9rem;
+}
+
+.footer-col i {
+  width: 1.2rem;
+  margin-right: 0.4rem;
+  color: var(--color-white);
+}
+
+.footer-col a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  color: var(--color-white);
+}
+
+/* Developed by */
+.footer-developer {
+  max-width: 1200px;
+  margin: 3rem auto 0;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.developer-label {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.developer-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.developer-brand img {
+  height: 3rem;
+  width: auto;
+  display: block;
+}
+
+.developer-tagline {
+  padding-left: 1rem;
+  border-left: 2px solid rgba(255, 255, 255, 0.3);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 1.5rem auto 0;
+  padding: 1.25rem 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
