@@ -26,3 +26,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: var(--color-light);
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
