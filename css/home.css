@@ -255,6 +255,7 @@
   color: rgba(255, 255, 255, 0.85);
   font-size: 1.05rem;
 }
+
 /* About Responsiveness */
 @media (max-width: 768px) {
   .about {

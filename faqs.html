@@ -12,18 +12,54 @@
   <body>
     <header class="site-header">
       <nav class="main-nav">
-        <img src="assets/images/logo.png" alt="SK Connect Logo" />
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="announcement.html">Announcements</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="faqs.html">FAQs</a></li>
-        </ul>
-        <div class="nav-actions">
-          <a class="signin-btn" href="#">Admin Login</a>
+        <img
+          class="nav-logo"
+          src="assets/images/logo.png"
+          alt="SK Connect Logo"
+        />
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="announcement.html">Announcements</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <a class="signin-btn" href="#">Admin Login</a>
+          </div>
+
+          <div class="nav-menu-logos">
+            <div class="nav-menu-logos-row">
+              <img src="assets/images/logo.png" alt="SKConnect Logo" />
+              <img
+                src="assets/images/skcouncil_logo.png"
+                alt="SK Sta. Rita Logo"
+              />
+              <img
+                src="assets/images/brgycouncil_logo.png"
+                alt="Barangay Sta. Rita Logo"
+              />
+            </div>
+            <p>Sangguniang Kabataan &middot; Barangay Sta. Rita</p>
+          </div>
         </div>
       </nav>
     </header>
+
     <h1>FAQs Page</h1>
   </body>
 </html>
