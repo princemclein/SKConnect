@@ -279,19 +279,6 @@
   margin: 1rem 0 0;
 }
 
-.council-logos {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-  margin-top: 2rem;
-}
-
-.council-logos img {
-  height: 5rem;
-  width: auto;
-  display: block;
-}
-
 .council-group {
   overflow: hidden;
   border-radius: 13px;
