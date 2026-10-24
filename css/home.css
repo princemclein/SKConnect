@@ -410,7 +410,7 @@
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1.25fr;
+  grid-template-columns: 1.25fr 1fr;
   gap: 3.5rem;
   align-items: center;
 }
@@ -423,7 +423,9 @@
   margin: 1rem 0 0;
 }
 
+/* photo goes first (left) on desktop */
 .council-group {
+  order: -1;
   overflow: hidden;
   border-radius: 13px;
   border: 1px solid var(--color-border);
@@ -442,6 +444,19 @@
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }
+
+  /* stacked: text first, centered */
+  .council-group {
+    order: 0;
+  }
+
+  .council-content {
+    text-align: center;
+  }
+
+  .council-content .section-subtitle {
+    margin: 1rem auto 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -453,10 +468,6 @@
 @media (max-width: 480px) {
   .council {
     padding: 3rem 1rem;
-  }
-
-  .council-logos img {
-    height: 3.75rem;
   }
 
   .council-group {
