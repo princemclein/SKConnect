@@ -27,3 +27,8 @@ document.addEventListener("keydown", (e) => {
 window.matchMedia("(min-width: 993px)").addEventListener("change", (e) => {
   if (e.matches) setMenu(false);
 });
+
+// close when tapping the dimmed backdrop
+document.addEventListener("click", (e) => {
+  if (e.target === document.body) setMenu(false);
+});
