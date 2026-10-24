@@ -32,3 +32,37 @@ window.matchMedia("(min-width: 993px)").addEventListener("change", (e) => {
 document.addEventListener("click", (e) => {
   if (e.target === document.body) setMenu(false);
 });
+
+// Hide the header when scrolling down, show it when scrolling up
+const siteHeader = document.querySelector(".site-header");
+const SCROLL_DELTA = 6; // how many pixels count as a real scroll
+let lastScrollY = window.scrollY;
+let ticking = false;
+
+function updateHeader() {
+  const currentY = Math.max(window.scrollY, 0);
+  const menuOpen = document.body.classList.contains("menu-open");
+
+  if (currentY <= siteHeader.offsetHeight || menuOpen) {
+    // near the top, or the menu is open: always show
+    siteHeader.classList.remove("is-hidden");
+    lastScrollY = currentY;
+  } else if (Math.abs(currentY - lastScrollY) > SCROLL_DELTA) {
+    // scrolling down hides it, scrolling up shows it
+    siteHeader.classList.toggle("is-hidden", currentY > lastScrollY);
+    lastScrollY = currentY;
+  }
+
+  ticking = false;
+}
+
+window.addEventListener(
+  "scroll",
+  () => {
+    if (!ticking) {
+      window.requestAnimationFrame(updateHeader);
+      ticking = true;
+    }
+  },
+  { passive: true },
+);
