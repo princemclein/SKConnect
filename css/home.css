@@ -154,7 +154,8 @@
 }
 
 .button-secondary:hover {
-  background: rgba(29, 78, 216, 0.08);
+  color: var(--color-white);
+  background: var(--color-primary);
 }
 
 /* Hero Responsiveness */
