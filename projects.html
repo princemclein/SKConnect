@@ -1,22 +1,33 @@
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/projects.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <title>SKCOnnect | Projects</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <title>SKConnect | Projects</title>
   </head>
+
   <body>
+    <!-- Header / Navigation -->
     <header class="site-header">
       <nav class="main-nav">
-        <img
-          class="nav-logo"
-          src="assets/images/logo.png"
-          alt="SK Connect Logo"
-        />
+        <a href="index.html" aria-label="SKConnect Home">
+          <img
+            class="nav-logo"
+            src="assets/images/logo.png"
+            alt="SK Connect Logo"
+          />
+        </a>
 
         <button
           class="nav-toggle"
@@ -34,7 +45,9 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="announcement.html">Announcements</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li>
+              <a href="projects.html" aria-current="page">Projects</a>
+            </li>
             <li><a href="faqs.html">FAQs</a></li>
           </ul>
 
@@ -60,6 +73,231 @@
       </nav>
     </header>
 
-    <main><h1>Projects Page</h1></main>
+    <!-- Main Content -->
+    <main>
+      <!-- Page Header -->
+      <section class="projects-header">
+        <div class="projects-header-inner">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span aria-current="page">Projects</span>
+          </nav>
+
+          <span class="section-eyebrow">PUBLIC PROJECT RECORDS</span>
+
+          <h1>Our Projects, <span>Our Progress.</span></h1>
+
+          <p>
+            Explore completed SK projects in Barangay Sta. Rita, their
+            accomplishments, and available budget and expenditure records.
+          </p>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="projects-section">
+        <div class="projects-container">
+          <div class="projects-intro">
+            <div>
+              <h2>Completed Projects</h2>
+              <p>
+                Discover what our SK council has accomplished for the community.
+              </p>
+            </div>
+
+            <span class="project-count">
+              <i class="fa-solid fa-folder-open"></i>
+              Project Archive
+            </span>
+          </div>
+
+          <!-- Project Cards -->
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <article class="project-card">
+              <a
+                class="project-image"
+                href="project-details.html?id=1"
+                aria-label="View Check-Consult-Cure project details"
+              >
+                <img
+                  src="assets/images/projects/check-consult-cure.jpg"
+                  alt="Check-Consult-Cure community health activity"
+                  loading="lazy"
+                />
+
+                <span class="project-status">
+                  <i class="fa-solid fa-circle-check"></i>
+                  Completed
+                </span>
+              </a>
+
+              <div class="project-content">
+                <div class="project-category">
+                  <i class="fa-solid fa-heart-pulse"></i>
+                  Health &amp; Wellness
+                </div>
+
+                <h3>
+                  <a href="project-details.html?id=1"> Check-Consult-Cure </a>
+                </h3>
+
+                <p class="project-description">
+                  A community health initiative providing eye consultations and
+                  eyeglasses to qualified beneficiaries.
+                </p>
+
+                <div class="project-meta">
+                  <div>
+                    <span class="meta-label">COMPLETION DATE</span>
+                    <span class="meta-value">See project report</span>
+                  </div>
+
+                  <div>
+                    <span class="meta-label">FINANCIAL RECORDS</span>
+                    <span class="meta-value">
+                      <i class="fa-solid fa-file-invoice-dollar"></i>
+                      See report
+                    </span>
+                  </div>
+                </div>
+
+                <a class="project-details-btn" href="project-details.html?id=1">
+                  View Full Details
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card">
+              <a
+                class="project-image"
+                href="project-details.html?id=2"
+                aria-label="View youth sports project details"
+              >
+                <img
+                  src="assets/images/projects/youth-sports.jpg"
+                  alt="Youth sports program"
+                  loading="lazy"
+                />
+
+                <span class="project-status">
+                  <i class="fa-solid fa-circle-check"></i>
+                  Completed
+                </span>
+              </a>
+
+              <div class="project-content">
+                <div class="project-category">
+                  <i class="fa-solid fa-basketball"></i>
+                  Sports &amp; Recreation
+                </div>
+
+                <h3>
+                  <a href="project-details.html?id=2"> Youth Sports Program </a>
+                </h3>
+
+                <p class="project-description">
+                  A youth sports initiative encouraging community participation,
+                  teamwork, and active living.
+                </p>
+
+                <div class="project-meta">
+                  <div>
+                    <span class="meta-label">COMPLETION DATE</span>
+                    <span class="meta-value">See project report</span>
+                  </div>
+
+                  <div>
+                    <span class="meta-label">FINANCIAL RECORDS</span>
+                    <span class="meta-value">
+                      <i class="fa-solid fa-file-invoice-dollar"></i>
+                      See report
+                    </span>
+                  </div>
+                </div>
+
+                <a class="project-details-btn" href="project-details.html?id=2">
+                  View Full Details
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card">
+              <a
+                class="project-image"
+                href="project-details.html?id=3"
+                aria-label="View educational assistance project details"
+              >
+                <img
+                  src="assets/images/projects/educational-assistance.jpg"
+                  alt="Educational assistance program"
+                  loading="lazy"
+                />
+
+                <span class="project-status">
+                  <i class="fa-solid fa-circle-check"></i>
+                  Completed
+                </span>
+              </a>
+
+              <div class="project-content">
+                <div class="project-category">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                  Education
+                </div>
+
+                <h3>
+                  <a href="project-details.html?id=3">
+                    Educational Assistance
+                  </a>
+                </h3>
+
+                <p class="project-description">
+                  An educational support initiative for qualified youth
+                  beneficiaries in the barangay.
+                </p>
+
+                <div class="project-meta">
+                  <div>
+                    <span class="meta-label">COMPLETION DATE</span>
+                    <span class="meta-value">See project report</span>
+                  </div>
+
+                  <div>
+                    <span class="meta-label">FINANCIAL RECORDS</span>
+                    <span class="meta-value">
+                      <i class="fa-solid fa-file-invoice-dollar"></i>
+                      See report
+                    </span>
+                  </div>
+                </div>
+
+                <a class="project-details-btn" href="project-details.html?id=3">
+                  View Full Details
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Transparency Note -->
+          <div class="projects-note">
+            <i class="fa-solid fa-circle-info"></i>
+            <p>
+              Project information and financial records are presented according
+              to the documentation made available by the SK council.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <!-- Keep your existing footer markup here. -->
   </body>
 </html>
