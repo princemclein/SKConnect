@@ -311,6 +311,12 @@
   }
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+  .nav-menu {
+    width: min(92vw, 400px);
+  }
+}
+
 @media (max-width: 480px) {
   .main-nav {
     padding: 0.55rem 1rem;
