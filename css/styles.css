@@ -24,9 +24,11 @@
 body {
   margin: 0;
   background: var(--color-light);
+  overflow-x: clip;
 }
 
 html {
+  overflow-x: clip;
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
 }
