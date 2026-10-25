@@ -42,8 +42,8 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") setMenu(false);
 });
 
-// close if the screen grows back to desktop size
-window.matchMedia("(min-width: 993px)").addEventListener("change", (e) => {
+// close if the screen grows beyond the mobile breakpoint
+window.matchMedia("(min-width: 769px)").addEventListener("change", (e) => {
   if (e.matches) setMenu(false);
 });
 

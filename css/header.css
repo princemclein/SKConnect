@@ -16,7 +16,7 @@
 
 .main-nav {
   height: 100%;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0.55rem 2rem;
   display: flex;
@@ -72,7 +72,7 @@
   outline-offset: 3px;
 }
 
-/* burger button (hidden on desktop) */
+/* burger button (visible on mobile) */
 .nav-toggle {
   display: none;
   width: 2.75rem;
@@ -178,7 +178,7 @@
 }
 
 /* Header Responsiveness */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .main-nav {
     justify-content: space-between;
   }
