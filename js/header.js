@@ -20,7 +20,11 @@ function setMenu(open) {
     document.body.style.position = "";
     document.body.style.top = "";
     document.body.style.width = "";
-    window.scrollTo(0, lockedScrollY);
+    window.scrollTo({
+      top: lockedScrollY,
+      left: 0,
+      behavior: "instant",
+    });
   }
 }
 
