@@ -24,6 +24,7 @@
 body {
   margin: 0;
   background: var(--color-light);
+  padding-top: 75px;
   overflow-x: clip;
 }
 

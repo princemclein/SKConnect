@@ -1,12 +1,27 @@
 // Mobile menu
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.getElementById("nav-menu");
+let lockedScrollY = 0;
 
 function setMenu(open) {
+  const wasOpen = navMenu.classList.contains("is-open");
+
   navMenu.classList.toggle("is-open", open);
   navToggle.setAttribute("aria-expanded", open);
   navToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
   document.body.classList.toggle("menu-open", open);
+
+  if (open && !wasOpen) {
+    lockedScrollY = window.scrollY;
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${lockedScrollY}px`;
+    document.body.style.width = "100%";
+  } else if (!open && wasOpen) {
+    document.body.style.position = "";
+    document.body.style.top = "";
+    document.body.style.width = "";
+    window.scrollTo(0, lockedScrollY);
+  }
 }
 
 navToggle.addEventListener("click", () => {
@@ -32,37 +47,3 @@ window.matchMedia("(min-width: 993px)").addEventListener("change", (e) => {
 document.addEventListener("click", (e) => {
   if (e.target === document.body) setMenu(false);
 });
-
-// Hide the header when scrolling down, show it when scrolling up
-const siteHeader = document.querySelector(".site-header");
-const SCROLL_DELTA = 6; // how many pixels count as a real scroll
-let lastScrollY = window.scrollY;
-let ticking = false;
-
-function updateHeader() {
-  const currentY = Math.max(window.scrollY, 0);
-  const menuOpen = document.body.classList.contains("menu-open");
-
-  if (currentY <= siteHeader.offsetHeight || menuOpen) {
-    // near the top, or the menu is open: always show
-    siteHeader.classList.remove("is-hidden");
-    lastScrollY = currentY;
-  } else if (Math.abs(currentY - lastScrollY) > SCROLL_DELTA) {
-    // scrolling down hides it, scrolling up shows it
-    siteHeader.classList.toggle("is-hidden", currentY > lastScrollY);
-    lastScrollY = currentY;
-  }
-
-  ticking = false;
-}
-
-window.addEventListener(
-  "scroll",
-  () => {
-    if (!ticking) {
-      window.requestAnimationFrame(updateHeader);
-      ticking = true;
-    }
-  },
-  { passive: true },
-);

@@ -7,26 +7,11 @@
   );
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
   height: 75px;
-  position: sticky;
+  position: fixed;
   top: 0;
+  right: 0;
+  left: 0;
   z-index: 100;
-  transition: transform 300ms ease;
-}
-
-/* hidden while scrolling down */
-.site-header.is-hidden {
-  transform: translateY(-100%);
-}
-
-/* keyboard users can always reach the header */
-.site-header:has(:focus-visible) {
-  transform: none;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .site-header {
-    transition: none;
-  }
 }
 
 .main-nav {
@@ -153,10 +138,6 @@
 
 /* Header Responsiveness */
 @media (max-width: 992px) {
-  body.menu-open {
-    overflow: hidden;
-  }
-
   .main-nav {
     justify-content: space-between;
   }
