@@ -15,6 +15,10 @@ const announcements = {
       "Complete the beneficiary registration form.",
       "Attend the scheduled eye consultation and screening.",
     ],
+    information: [
+      ["Location", "Barangay Sta. Rita Manpower Hall"],
+      ["Registration", "Register with the SK Council before the consultation."],
+    ],
     images: [
       {
         src: "assets/images/announcement/eye_consult.jpg",
@@ -37,7 +41,7 @@ const announcements = {
       "Register on-site and follow the queue system.",
       "Services are available while slots and supplies last.",
     ],
-    event: [
+    information: [
       ["Date", "October 28, 2026"],
       ["Time", "9:00 AM"],
       ["Venue", "Barangay Sta. Rita Manpower Hall"],
@@ -67,6 +71,10 @@ const announcements = {
       "Submit a resume or personal information sheet.",
       "Complete any interview or screening required by the SK Office.",
     ],
+    information: [
+      ["Where to submit", "SK Office, Barangay Sta. Rita"],
+      ["Submission", "Submit the completed application and supporting documents to the SK Office."],
+    ],
     images: [
       {
         src: "assets/images/announcement/sk_bep.jpg",
@@ -89,6 +97,10 @@ const announcements = {
       "Present a valid ID or follow the beneficiary verification process.",
       "Use only the designated routes and pick-up points.",
       "Follow the posted schedule and vehicle safety guidelines.",
+    ],
+    information: [
+      ["Service area", "Olongapo City Yellow Jeeps"],
+      ["Schedule", "Follow the official SK schedule and designated pick-up points."],
     ],
     images: [
       {
@@ -113,6 +125,10 @@ const announcements = {
       "Bring your education, training, and work experience details.",
       "Bring an existing resume or draft, if available.",
       "Bring a notebook or device for workshop activities.",
+    ],
+    information: [
+      ["Venue", "Barangay Sta. Rita Manpower Hall"],
+      ["Registration", "Confirm the registration process with the SK Council."],
     ],
     images: [
       {
@@ -139,6 +155,10 @@ const announcements = {
       "Provide proof of financial need when requested.",
       "Submit any additional documents required by the SK Council.",
     ],
+    information: [
+      ["Where to submit", "Barangay Sta. Rita SK Office"],
+      ["Submission", "Submit the application and supporting documents to the SK Office."],
+    ],
     images: [
       {
         src: "assets/images/announcement/educational_assistance.jpeg",
@@ -164,6 +184,10 @@ const announcements = {
       "Wear comfortable clothing and closed-toe footwear.",
       "Provide parental consent if required for a minor participant.",
     ],
+    information: [
+      ["Venue", "Barangay Sta. Rita Covered Court"],
+      ["Registration", "Confirm team registration instructions with the SK Council."],
+    ],
     images: [
       {
         src: "assets/images/announcement/amazing_race.jpeg",
@@ -178,7 +202,7 @@ const item = announcements[id];
 const content = document.getElementById("announcement-content");
 const notFound = document.getElementById("not-found");
 
-function renderEvent(rows) {
+function renderInformation(rows) {
   if (!rows?.length) return;
   const section = document.getElementById("event-section");
   const list = document.getElementById("event-information");
@@ -320,7 +344,7 @@ if (!item) {
     document.getElementById("sidebar-deadline").textContent = item.deadline;
     document.getElementById("sidebar-deadline-row").hidden = false;
   }
-  renderEvent(item.event);
+  renderInformation(item.information || item.event);
   renderRequirements(item.requirements);
   renderGallery(item.images);
 }

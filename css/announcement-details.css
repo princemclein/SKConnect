@@ -227,6 +227,17 @@
 .detail-section p {
   margin: 0;
 }
+.about-requirements {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-border);
+}
+.about-requirements h3 {
+  margin: 0 0 12px;
+  color: var(--color-black);
+  font-size: 1rem;
+  line-height: 1.4;
+}
 .detail-section ul,
 .detail-section ol {
   margin: 0;
