@@ -297,6 +297,10 @@
   margin: 0 0 16px;
   font-size: 0.92rem;
 }
+.contact-links {
+  display: grid;
+  gap: 10px;
+}
 .contact-link,
 .primary-link {
   display: inline-flex;
