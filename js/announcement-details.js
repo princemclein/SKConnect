@@ -16,8 +16,8 @@ const announcements = {
       "Attend the scheduled eye consultation and screening.",
     ],
     information: [
-      ["Location", "Barangay Sta. Rita Manpower Hall"],
-      ["Registration", "Register with the SK Council before the consultation."],
+      ["Consultation venue", "Barangay Sta. Rita Manpower Hall"],
+      ["Registration instructions", "Register with the SK Council before the consultation."],
     ],
     images: [
       {
@@ -42,9 +42,9 @@ const announcements = {
       "Services are available while slots and supplies last.",
     ],
     information: [
-      ["Date", "October 28, 2026"],
-      ["Time", "9:00 AM"],
-      ["Venue", "Barangay Sta. Rita Manpower Hall"],
+      ["Service date", "October 28, 2026"],
+      ["Service time", "9:00 AM"],
+      ["Service venue", "Barangay Sta. Rita Manpower Hall"],
     ],
     images: [
       {
@@ -72,8 +72,8 @@ const announcements = {
       "Complete any interview or screening required by the SK Office.",
     ],
     information: [
-      ["Where to submit", "SK Office, Barangay Sta. Rita"],
-      ["Submission", "Submit the completed application and supporting documents to the SK Office."],
+      ["Application submission location", "SK Office, Barangay Sta. Rita"],
+      ["Application submission instructions", "Submit the completed application and supporting documents to the SK Office."],
     ],
     images: [
       {
@@ -99,8 +99,8 @@ const announcements = {
       "Follow the posted schedule and vehicle safety guidelines.",
     ],
     information: [
-      ["Service area", "Olongapo City Yellow Jeeps"],
-      ["Schedule", "Follow the official SK schedule and designated pick-up points."],
+      ["Transportation service area", "Olongapo City Yellow Jeeps"],
+      ["Transportation schedule", "Follow the official SK schedule and designated pick-up points."],
     ],
     images: [
       {
@@ -127,8 +127,8 @@ const announcements = {
       "Bring a notebook or device for workshop activities.",
     ],
     information: [
-      ["Venue", "Barangay Sta. Rita Manpower Hall"],
-      ["Registration", "Confirm the registration process with the SK Council."],
+      ["Seminar venue", "Barangay Sta. Rita Manpower Hall"],
+      ["Seminar registration instructions", "Confirm the registration process with the SK Council."],
     ],
     images: [
       {
@@ -156,8 +156,8 @@ const announcements = {
       "Submit any additional documents required by the SK Council.",
     ],
     information: [
-      ["Where to submit", "Barangay Sta. Rita SK Office"],
-      ["Submission", "Submit the application and supporting documents to the SK Office."],
+      ["Application submission location", "Barangay Sta. Rita SK Office"],
+      ["Application submission instructions", "Submit the application and supporting documents to the SK Office."],
     ],
     images: [
       {
@@ -185,8 +185,8 @@ const announcements = {
       "Provide parental consent if required for a minor participant.",
     ],
     information: [
-      ["Venue", "Barangay Sta. Rita Covered Court"],
-      ["Registration", "Confirm team registration instructions with the SK Council."],
+      ["Event venue", "Barangay Sta. Rita Covered Court"],
+      ["Team registration instructions", "Confirm team registration instructions with the SK Council."],
     ],
     images: [
       {
@@ -336,10 +336,6 @@ if (!item) {
     item.description;
   document.getElementById("sidebar-category").textContent = item.category;
   document.getElementById("sidebar-date").textContent = item.postedLabel;
-  if (item.location) {
-    document.getElementById("sidebar-location").textContent = item.location;
-    document.getElementById("sidebar-location-row").hidden = false;
-  }
   if (item.deadline) {
     document.getElementById("sidebar-deadline").textContent = item.deadline;
     document.getElementById("sidebar-deadline-row").hidden = false;
