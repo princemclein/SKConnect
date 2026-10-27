@@ -73,7 +73,14 @@
           aria-label="Announcement image gallery"
         >
           <div class="gallery-main">
-            <img id="featured-image" src="" alt="" />
+            <img
+              id="featured-image"
+              src=""
+              alt=""
+              tabindex="0"
+              role="button"
+              aria-label="Open announcement image viewer"
+            />
             <button
               class="gallery-arrow gallery-previous"
               id="gallery-previous"
@@ -92,7 +99,13 @@
             >
               &rsaquo;
             </button>
-            <span class="image-counter" id="image-counter">1 / 1</span>
+            <span
+              class="image-counter"
+              id="image-counter"
+              aria-live="polite"
+              aria-atomic="true"
+              >1 / 1</span
+            >
           </div>
           <div
             class="gallery-thumbnails"

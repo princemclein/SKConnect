@@ -140,6 +140,7 @@
   box-shadow: 0 0 0 2px rgba(29, 78, 216, 0.12);
 }
 .gallery-thumbnail:focus-visible,
+.gallery-main > img:focus-visible,
 .gallery-arrow:focus-visible,
 .lightbox-arrow:focus-visible,
 .lightbox-close:focus-visible,

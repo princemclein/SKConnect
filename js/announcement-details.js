@@ -203,10 +203,25 @@ function renderGallery(images) {
   });
   prev.addEventListener("click", () => show(active - 1));
   next.addEventListener("click", () => show(active + 1));
-  featured.addEventListener("click", () => {
+
+  function openLightbox() {
     lightbox.hidden = false;
     document.body.style.overflow = "hidden";
     document.getElementById("lightbox-close").focus();
+  }
+
+  featured.addEventListener("click", openLightbox);
+  featured.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      openLightbox();
+    } else if (event.key === "ArrowLeft") {
+      event.preventDefault();
+      show(active - 1);
+    } else if (event.key === "ArrowRight") {
+      event.preventDefault();
+      show(active + 1);
+    }
   });
   document
     .getElementById("lightbox-previous")
