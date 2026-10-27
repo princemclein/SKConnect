@@ -77,6 +77,7 @@
   color: var(--color-black);
   background: rgba(255, 255, 255, 0.94);
   cursor: pointer;
+  touch-action: manipulation;
   transition:
     background 160ms ease,
     color 160ms ease;
@@ -360,6 +361,9 @@
   font-size: 1.8rem;
 }
 @media (max-width: 850px) {
+  .gallery-main {
+    aspect-ratio: 3 / 2;
+  }
   .content-layout {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -384,6 +388,16 @@
     aspect-ratio: 4/3;
     border-radius: 10px;
   }
+  .gallery-arrow {
+    width: 44px;
+    height: 44px;
+  }
+  .gallery-previous {
+    left: 10px;
+  }
+  .gallery-next {
+    right: 10px;
+  }
   .gallery-thumbnail {
     flex-basis: 108px;
     height: 74px;
@@ -394,6 +408,10 @@
   }
   .announcement-summary {
     font-size: 1rem;
+  }
+  .heading-meta {
+    gap: 8px;
+    margin-bottom: 12px;
   }
   .details-sidebar {
     grid-template-columns: 1fr;
