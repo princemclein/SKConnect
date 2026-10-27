@@ -1,0 +1,236 @@
+:root {
+  --login-blue: var(--color-primary);
+  --login-panel: #f8fafc;
+}
+
+body {
+  min-height: 100vh;
+  padding-top: 0;
+  background: var(--login-panel);
+}
+
+.login-page {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.9fr);
+}
+
+.login-welcome {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: clamp(2rem, 7vw, 6rem);
+  background: var(--login-blue);
+  color: var(--color-white);
+}
+
+.login-welcome::before,
+.login-welcome::after {
+  position: absolute;
+  content: "";
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 50%;
+}
+
+.login-welcome::before {
+  top: -13rem;
+  right: -8rem;
+  width: 35rem;
+  height: 35rem;
+  box-shadow:
+    0 0 0 3rem rgba(255, 255, 255, 0.04),
+    0 0 0 6rem rgba(255, 255, 255, 0.035),
+    0 0 0 9rem rgba(255, 255, 255, 0.03);
+}
+
+.login-welcome::after {
+  bottom: -10rem;
+  left: -9rem;
+  width: 24rem;
+  height: 24rem;
+  box-shadow: 0 0 0 2.5rem rgba(255, 255, 255, 0.04);
+}
+
+.welcome-content {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 560px);
+}
+
+.brand-name {
+  display: inline-block;
+  color: var(--color-white);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+}
+
+.welcome-logos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.welcome-logos img {
+  width: clamp(3.2rem, 7vw, 5rem);
+  height: clamp(3.2rem, 7vw, 5rem);
+  object-fit: contain;
+}
+
+.welcome-copy {
+  max-width: 470px;
+  margin-top: clamp(4rem, 10vh, 8rem);
+}
+
+.welcome-label,
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.welcome-copy h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.welcome-copy > p:last-child {
+  max-width: 430px;
+  margin: 1.5rem 0 0;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.7;
+}
+
+.login-panel {
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  background: var(--login-panel);
+}
+
+.login-card {
+  width: min(100%, 410px);
+}
+
+.login-card .eyebrow {
+  color: var(--login-blue);
+}
+
+.login-card h2 {
+  margin: 0;
+  color: var(--color-black);
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+
+.login-intro {
+  margin: 1rem 0 2rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+.form-field + .form-field {
+  margin-top: 1.25rem;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-black);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.form-field input {
+  width: 100%;
+  min-height: 3.25rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.6rem;
+  color: var(--color-black);
+  background: var(--color-white);
+  font-size: 1rem;
+}
+
+.form-field input::placeholder {
+  color: #94a3b8;
+}
+
+.form-field input:focus {
+  border-color: var(--login-blue);
+  outline: 3px solid rgba(29, 78, 216, 0.14);
+}
+
+.login-button {
+  width: 100%;
+  min-height: 3.25rem;
+  margin-top: 1.75rem;
+  border: 1px solid var(--login-blue);
+  border-radius: 0.6rem;
+  color: var(--color-white);
+  background: var(--login-blue);
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition:
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.login-button:hover {
+  background: var(--color-black);
+}
+
+.login-button:active {
+  transform: translateY(1px);
+}
+
+.login-button:focus-visible {
+  outline: 3px solid var(--login-blue);
+  outline-offset: 3px;
+}
+
+.demo-note {
+  margin: 1.25rem 0 0;
+  color: var(--color-muted);
+  font-size: 0.82rem;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .login-page {
+    grid-template-columns: 1fr;
+  }
+
+  .login-welcome {
+    min-height: 420px;
+    padding: 2rem 1.5rem;
+  }
+
+  .welcome-copy {
+    margin-top: 3rem;
+  }
+
+  .login-panel {
+    min-height: 520px;
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
