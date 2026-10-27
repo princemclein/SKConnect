@@ -204,6 +204,10 @@
 .detail-section {
   margin: 0 0 32px;
 }
+.detail-section + .detail-section {
+  padding-top: 26px;
+  border-top: 1px solid var(--color-border);
+}
 .detail-section h2,
 .sidebar-card h2 {
   margin: 0 0 14px;
