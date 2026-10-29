@@ -186,6 +186,11 @@ body {
   outline: 3px solid rgba(29, 78, 216, 0.14);
 }
 
+.login-button a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
 .login-button {
   width: 100%;
   min-height: 3.25rem;
