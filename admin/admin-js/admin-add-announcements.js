@@ -23,6 +23,16 @@ if (adminSidebar && adminMenuToggle) {
     link.addEventListener("click", () => setSidebarOpen(false));
   });
 
+  document.addEventListener("click", (event) => {
+    if (
+      adminSidebar.classList.contains("is-open") &&
+      !adminSidebar.contains(event.target) &&
+      !adminMenuToggle.contains(event.target)
+    ) {
+      setSidebarOpen(false);
+    }
+  });
+
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") setSidebarOpen(false);
   });
