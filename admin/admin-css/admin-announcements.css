@@ -63,3 +63,131 @@
     flex-direction: column;
   }
 }
+
+.announcement-records {
+  margin-top: 2.5rem;
+}
+
+.records-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.records-heading h2 {
+  margin: 0;
+  color: var(--color-black);
+  font-size: 1.25rem;
+}
+
+.records-heading p {
+  margin: 0.4rem 0 0;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.records-count {
+  flex-shrink: 0;
+  border-radius: 999px;
+  background: #dbeafe;
+  padding: 0.45rem 0.7rem;
+  color: #1e40af;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.announcement-record-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.announcement-record {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: 0.6rem;
+  background: var(--color-white);
+}
+
+.announcement-record > img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.record-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.record-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  color: var(--color-primary);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.record-meta strong {
+  color: #15803d;
+  font-size: 0.68rem;
+}
+
+.record-body h3 {
+  margin: 0.65rem 0 0;
+  color: var(--color-black);
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.record-body p {
+  margin: 0.45rem 0 1rem;
+  color: var(--color-muted);
+  font-size: 0.82rem;
+}
+
+.record-action {
+  margin-top: auto;
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.record-action:hover,
+.record-action:focus-visible {
+  color: #1e40af;
+  text-decoration: underline;
+}
+
+.record-action:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+@media (max-width: 900px) {
+  .announcement-record-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .records-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .announcement-record-grid {
+    grid-template-columns: 1fr;
+  }
+}
