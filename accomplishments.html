@@ -7,14 +7,12 @@
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/projects.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="css/announcements.css" />
+    <link rel="stylesheet" href="css/accomplishments.css" />
+    <link rel="stylesheet" href="https://cdjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-    <title>SKConnect | Projects</title>
+    <title>SKConnect | Accomplishments</title>
   </head>
 
   <body>
@@ -71,7 +69,7 @@
     </header>
 
     <!-- Main Content -->
-    <main>
+    <section>
       <!-- Page Header -->
       <section class="projects-header">
         <div class="projects-header-inner">
@@ -92,7 +90,217 @@
         </div>
       </section>
 
-          <!-- Transparency Note -->
+      <!-- Accomplishments -->
+      <section class="accomplishments">
+        <div class="accomplishments-container">
+          <div class="filter-bar" id="filter-bar">
+            <div class="filters" role="group" aria-label="Filter by category">
+            <button
+                class="filter-btn"
+                type="button"
+                data-category="All"
+                aria-pressed="true"
+              >
+                All
+              </button>
+
+              <button
+                class="filter-btn"
+                type="button"
+                data-category="Sports"
+                aria-pressed="false"
+              >
+                Sports
+              </button>
+
+              <button
+                class="filter-btn"
+                type="button"
+                data-category="Health"
+                aria-pressed="false"
+              >
+                Health
+              </button>
+
+              <button
+                class="filter-btn"
+                type="button"
+                data-category="Education"
+                aria-pressed="false"
+              >
+                Education
+              </button>
+
+              <button
+                class="filter-btn"
+                type="button"
+                data-category="Environment"
+                aria-pressed="false"
+              >
+                Environment
+              </button>
+
+              <button
+                class="filter-btn"
+                type="button"
+                data-category="Culture and arts"
+                aria-pressed="false"
+              >
+                culture and arts
+              </button>
+            </div>
+
+          <p class="results-count" id="result-count" aria-live="polite"></p>
+        </div>
+
+
+        
+        <!-- Cards -->
+         <div class="accomplishments-grid" id="accomplishments-grid">
+
+          <!-- Accomplishment 1 -->
+          <article class="accomplishments-cards"  data-category="Sports">
+            <div class="card-thumb">
+              <img
+                src="assets/images/accomplishment/inter-purok.png"
+                alt="Interpurok Basketball League"
+                loading="lazy"
+              />  
+            </div>
+
+            <div class="card-body">
+              <div class="tags">
+                  <span class="status-tags">Completed</span>
+                  <span class="card-category">Sports</span>
+              </div>
+
+              <h3 class="card-title">Interpurok-Basketball-League</h3>
+              <p class="card-desc">
+                A youth sports initiative organized by the Sangguniang
+                Kabataan of Barangay Sta. Rita to promote sportsmanship,
+                teamwork, and community participation through an interpurok
+                basketball competition. 
+              </p>
+
+              <ul class="card-meta">
+                <li>
+                  <span>Completion date</span>
+                  <time datetime="2025-12-07">December 7, 2025</time>
+                </li>
+                <li>
+                  <span>Financial records</span>
+                  <small>Not yet available</small>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card-footer">
+                <a class="btn-details" href="accomplishment-details.html?id=1">
+                  View full details
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+          </article>
+         
+          <!-- Accomplishment 2 -->
+          <article class="accomplishments-cards"  data-category="Environment">
+            <div class="card-thumb">
+              <img
+                src="assets/images/accomplishment/clean-up-drive.png"
+                alt="Clean Up Drive"
+                loading="lazy"
+              />  
+            </div>
+
+            <div class="card-body">
+              <div class="tags">
+                  <span class="status-tags">Completed</span>
+                  <span class="card-category">Environment</span>
+              </div>
+
+              <h3 class="card-title">Clean-Up-Drive</h3>
+              <p class="card-desc">
+                A community clean-up drive led by the Sangguniang Kabataan of 
+                Barangay Sta. Rita, held in waves to keep the barangay clean
+                and safe
+              </p>
+
+              <ul class="card-meta">
+                <li>
+                  <span>Completion date</span>
+                  <time datetime="2026-10-10">October 10. 2026</time>
+                </li>
+                <li>
+                  <span>Financial records</span>
+                  <small>Not yet available</small>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card-footer">
+                <a class="btn-details" href="accomplishment-details.html?id=1">
+                  View full details
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+          </article>
+       
+
+         <!-- Accomplishment 3 -->
+          <article class="accomplishments-cards"  data-category="Culture and arts">
+            <div class="card-thumb">
+              <img
+                src="assets/images/accomplishment/balagtasan.png"
+                alt="Ikatlong Yugto ng Balagtasan"
+                loading="lazy"
+              />  
+            </div>
+
+            <div class="card-body">
+              <div class="tags">
+                  <span class="status-tags">Completed</span>
+                  <span class="card-category">Culture and arts</span>
+              </div>
+
+              <h3 class="card-title">Ikatlong Yugto ng Balagtasan</h3>
+              <p class="card-desc">
+                A youth debate contest on Sipag o Talino for secondary and
+                college students, organized by the Sangguniang Kabataan of
+                Barangay Sta. Rita.
+              </p>
+
+              <ul class="card-meta">
+                <li>
+                  <span>Completion date</span>
+                  <time datetime="2026-08-21">August 21, 2026</time>
+                </li>
+                <li>
+                  <span>Financial records</span>
+                  <small>Not yet available</small>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card-footer">
+                <a class="btn-details" href="accomplishment-details.html?id=1">
+                  View full details
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+          </article>
+
+         </div><!-- End of the accomplishments-grid--> 
+
+         <!-- Empty State -->
+          <div class="empty-state" id="empty-state" hidden>
+            <h3>NO accomplishments found</h3>
+            <p>There are no projects in this category yet. Try another filters.</p>
+          </div>
+
+          <!-- Pagination-->
+          <nav class="pagination" id="pagination" arial-label="Pagination" hidden></nav>
+
+         <!-- Transparency Note -->
           <div class="projects-note">
             <i class="fa-solid fa-circle-info"></i>
             <p>
@@ -100,141 +308,7 @@
               to the documentation made available by the SK council.
             </p>
           </div>
-        </div>
-      </section>
-      
-      <!-- Accomplishments Grid -->
-      <div class="accomplishments-grid" id="accomplishments-grid">
-
-        <!-- Accomplishment 1 -->
-        <article class="accomplishments-cards" data-category="sports">
-          <div class="card-thumb">
-            <img
-              src="assets/images/accomplishment/inter-purok.png"
-              alt="inter-purok"
-              loading="lazy"
-           />   
-         </div>
-          
-         <div class="card-body">
-            <div class="tags">
-              <span class="status-tags">Completed</span>
-              <span class="card-category">Sports</span>
-         </div>
-
-          <h3 class="card-title">Interpurok-Basketball-League</h3>
-          <p  class="card-desc">
-            A youth sports initiative organized by the Sangguniang Kabataan of Barangay Sta. 
-            Rita to promote sportsmanship, teamwork, and community participation through an interpurok basketball competition.
-          </p>
-
-          <ul class="card-meta">
-            <li>
-              <span>Competition date</span>
-              <time datetime="2025-12-07">December 7, 2025</time>
-            </li>
-            <li>
-              <span>Financial records</span>
-              <small>Not yet available</small>
-            </li>
-          </ul>
-         </div>
-         
-         <div class="card-footer">
-          <a class="btn-details" href="accomplishment-details.html?id=1">
-            View full details 
-            <i class="fa-solid fa-arrow-right"></i>
-          </a>
-         </div>
-        </article>
-
-         <!-- Accomplishment 2 -->
-
-          <article class="accomplishments-cards" data-category="environment">
-          <div class="card-thumb">
-            <img
-              src="assets/images/accomplishment/clean-up-drive.png"
-              alt="clean-up-drive"
-              loading="lazy"
-            />
-          </div>
-          
-         <div class="card-body">
-            <div class="tags">
-              <span class="status-tags">Completed</span>
-              <span class="card-category">Environment</span>
-         </div>
-
-          <h3 class="card-title">Clean-Up-Drive</h3>
-          <p  class="card-desc">
-            A community clean-up drive led by the Sangguniang Kabataan of Barangay Sta. Rita,
-            held in waves to keep the barangay clean and safe.
-          </p>
-
-          <ul class="card-meta">
-            <li>
-              <span>Competition date</span>
-              <time datetime="2026-10-10">October 10, 2026</time>
-            </li>
-            <li>
-              <span>Financial records</span>
-              <small>Not yet available</small>
-            </li>
-          </ul>
-         </div>
-         
-         <div class="card-footer">
-          <a class="btn-details" href="accomplishment-details.html?id=1">
-            View full details 
-            <i class="fa-solid fa-arrow-right"></i>
-          </a>
-         </div>
-        </article>
-
-        <!-- Accomplishment 3 -->
-
-        <article class="accomplishments-cards" data-category="culture-and-arts">
-          <div class="card-thumb">
-            <img
-              src="assets/images/accomplishment/balagtasan.png"
-              alt="balagtasan"
-              loading="lazy"
-            />
-          </div>
-
-          
-         <div class="card-body">
-            <div class="tags">
-              <span class="status-tags">Completed</span>
-              <span class="card-category">Culture and arts</span>
-         </div>
-
-          <h3 class="card-title">Ikatlong Yugto ng Balagtasan</h3>
-          <p  class="card-desc">
-            A youth debate contest on Sipag o Talino for secondary and college students, organized by the Sangguniang
-             Kabataan of Barangay Sta. Rita.
-          </p>
-
-          <ul class="card-meta">
-            <li>
-              <span>Competition date</span>
-              <time datetime="2026-08-21">August 21, 2026</time>
-            </li>
-            <li>
-              <span>Financial records</span>
-              <small>Not yet available</small>
-            </li>
-          </ul>
-         </div>
-         
-         <div class="card-footer">
-          <a class="btn-details" href="accomplishment-details.html?id=1">
-            View full details 
-            <i class="fa-solid fa-arrow-right"></i>
-          </a>
-         </div>
-        </article>
-         <!-- End of accomplishments-gridZ-->
+        </section>
     </main>
 
     <footer class="site-footer">
