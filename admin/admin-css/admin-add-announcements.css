@@ -139,6 +139,44 @@
   line-height: 1.5;
 }
 
+.admin-primary-action,
+.admin-secondary-action {
+  display: inline-block;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.admin-primary-action {
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.admin-primary-action:hover,
+.admin-primary-action:focus-visible {
+  background: #1e40af;
+}
+
+.admin-secondary-action {
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+  color: var(--color-black);
+}
+
+.admin-secondary-action:hover,
+.admin-secondary-action:focus-visible {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.admin-primary-action:focus-visible,
+.admin-secondary-action:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
+}
+
 .form-actions {
   display: flex;
   justify-content: flex-end;
