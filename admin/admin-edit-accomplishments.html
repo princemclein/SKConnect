@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="admin-css/admin-edit-accomplishments.css" />
+    <title>Edit Accomplishment | SKConnect</title>
+  </head>
+
+  <body>
+    <div class="admin-shell">
+      <aside class="admin-sidebar" id="admin-sidebar">
+        <div class="admin-brand">
+          <img src="../assets/images/favicon.png" alt="" />
+          <span>SKConnect Admin</span>
+        </div>
+        <nav class="admin-navigation" aria-label="Admin navigation">
+          <a class="admin-navigation-link" href="admin-dashboard.html">Dashboard</a>
+          <a class="admin-navigation-link" href="admin-announcements.html">Announcements</a>
+          <a class="admin-navigation-link is-active" href="admin-accomplishments.html" aria-current="page">
+            Accomplishments
+          </a>
+          <a class="admin-navigation-link" href="admin-settings.html">Settings</a>
+        </nav>
+        <a class="admin-logout" href="../index.html">Log out</a>
+      </aside>
+
+      <div class="admin-main">
+        <header class="admin-header">
+          <button class="admin-menu-toggle" type="button" aria-label="Open admin navigation" aria-expanded="false" aria-controls="admin-sidebar">
+            <span></span><span></span><span></span>
+          </button>
+          <p class="admin-header-label">Administration</p>
+        </header>
+
+        <main class="admin-content">
+          <div class="admin-page-heading">
+            <a class="admin-back-link" href="admin-accomplishments.html">Back to accomplishments</a>
+            <p class="admin-eyebrow">Project transparency</p>
+            <h1>Edit accomplishment</h1>
+            <p>Update project information and supporting financial documentation.</p>
+          </div>
+
+          <form class="accomplishment-form" id="accomplishment-form">
+            <div class="form-section">
+              <h2>Project information</h2>
+              <div class="form-grid">
+                <div class="form-field form-field-wide">
+                  <label for="title">Project title</label>
+                  <input id="title" name="title" type="text" required />
+                </div>
+                <div class="form-field">
+                  <label for="category">Category</label>
+                  <select id="category" name="category" required>
+                    <option value="">Select a category</option>
+                    <option>Sports</option><option>Environment</option>
+                    <option>Education</option><option>Culture and arts</option>
+                    <option>Community development</option><option>Health</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="completion-date">Completion date</label>
+                  <input id="completion-date" name="completion-date" type="date" required />
+                </div>
+                <div class="form-field form-field-wide">
+                  <label for="location">Location</label>
+                  <input id="location" name="location" type="text" required />
+                </div>
+                <div class="form-field form-field-wide">
+                  <label for="description">Project description</label>
+                  <textarea id="description" name="description" rows="6" required></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h2>Project records</h2>
+              <div class="form-field">
+                <label for="report">Accomplishment report</label>
+                <textarea id="report" name="report" rows="8" required></textarea>
+              </div>
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="budget">Approved budget</label>
+                  <input id="budget" name="budget" type="number" min="0" step="0.01" placeholder="0.00" />
+                </div>
+                <div class="form-field">
+                  <label for="expenditure">Actual expenditure</label>
+                  <input id="expenditure" name="expenditure" type="number" min="0" step="0.01" placeholder="0.00" />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h2>Supporting photographs</h2>
+              <div class="form-field">
+                <label for="images">Replace project images <span>(optional)</span></label>
+                <input id="images" name="images" type="file" accept="image/*" multiple />
+                <p class="field-help">Choose replacement images if needed. A preview will appear below.</p>
+                <div class="image-preview" id="image-preview" aria-live="polite"></div>
+              </div>
+            </div>
+
+            <p class="form-status" id="form-status" role="status" hidden></p>
+            <div class="form-actions">
+              <a class="admin-secondary-action" href="admin-accomplishments.html">Cancel</a>
+              <button class="admin-primary-action" type="submit">Save changes</button>
+            </div>
+          </form>
+        </main>
+      </div>
+    </div>
+    <script src="admin-js/admin-edit-accomplishments.js"></script>
+  </body>
+</html>
