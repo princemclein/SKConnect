@@ -1,1 +1,65 @@
 @import url("admin-dashboard.css");
+
+.admin-heading-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.admin-primary-action,
+.admin-secondary-action,
+.admin-back-link {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.admin-primary-action {
+  display: inline-block;
+  border: 1px solid var(--color-primary);
+  border-radius: 0.5rem;
+  background: var(--color-primary);
+  padding: 0.7rem 1rem;
+  color: var(--color-white);
+}
+
+.admin-primary-action:hover,
+.admin-primary-action:focus-visible {
+  background: #1e40af;
+}
+
+.admin-primary-action:focus-visible,
+.admin-secondary-action:focus-visible,
+.admin-back-link:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+.admin-secondary-action {
+  display: inline-block;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  background: var(--color-white);
+  padding: 0.7rem 1rem;
+  color: var(--color-black);
+}
+
+.admin-secondary-action:hover,
+.admin-secondary-action:focus-visible {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.admin-back-link {
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  color: var(--color-primary);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .admin-heading-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
