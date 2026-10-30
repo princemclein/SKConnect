@@ -18,7 +18,9 @@
         </div>
 
         <nav class="admin-navigation" aria-label="Admin navigation">
-          <a class="admin-navigation-link" href="admin-dashboard.html">Dashboard</a>
+          <a class="admin-navigation-link" href="admin-dashboard.html"
+            >Dashboard</a
+          >
           <a
             class="admin-navigation-link is-active"
             href="admin-announcements.html"
@@ -29,7 +31,9 @@
           <a class="admin-navigation-link" href="admin-accomplishments.html">
             Accomplishments
           </a>
-          <a class="admin-navigation-link" href="admin-settings.html">Settings</a>
+          <a class="admin-navigation-link" href="admin-settings.html"
+            >Settings</a
+          >
         </nav>
 
         <a class="admin-logout" href="../index.html">Log out</a>
@@ -58,7 +62,10 @@
             </a>
             <p class="admin-eyebrow">Content management</p>
             <h1>Add announcement</h1>
-            <p>Create the information that will appear on the public announcements page.</p>
+            <p>
+              Create the information that will appear on the public
+              announcements page.
+            </p>
           </div>
 
           <form class="announcement-form" id="announcement-form">
@@ -84,12 +91,22 @@
 
                 <div class="form-field">
                   <label for="posted-date">Date posted</label>
-                  <input id="posted-date" name="posted-date" type="date" required />
+                  <input
+                    id="posted-date"
+                    name="posted-date"
+                    type="date"
+                    required
+                  />
                 </div>
 
                 <div class="form-field form-field-wide">
                   <label for="summary">Short description</label>
-                  <textarea id="summary" name="summary" rows="3" required></textarea>
+                  <textarea
+                    id="summary"
+                    name="summary"
+                    rows="3"
+                    required
+                  ></textarea>
                 </div>
 
                 <div class="form-field">
@@ -98,7 +115,9 @@
                 </div>
 
                 <div class="form-field">
-                  <label for="deadline">Application deadline <span>(optional)</span></label>
+                  <label for="deadline"
+                    >Application deadline <span>(optional)</span></label
+                  >
                   <input id="deadline" name="deadline" type="date" />
                 </div>
               </div>
@@ -108,12 +127,23 @@
               <h2>Announcement details</h2>
               <div class="form-field">
                 <label for="description">About this announcement</label>
-                <textarea id="description" name="description" rows="7" required></textarea>
+                <textarea
+                  id="description"
+                  name="description"
+                  rows="7"
+                  required
+                ></textarea>
               </div>
 
               <div class="form-field">
-                <label for="requirements">Requirements <span>(one per line)</span></label>
-                <textarea id="requirements" name="requirements" rows="6"></textarea>
+                <label for="requirements"
+                  >Requirements <span>(one per line)</span></label
+                >
+                <textarea
+                  id="requirements"
+                  name="requirements"
+                  rows="6"
+                ></textarea>
               </div>
             </div>
 
@@ -121,17 +151,33 @@
               <h2>Announcement images</h2>
               <div class="form-field">
                 <label for="images">Images</label>
-                <input id="images" name="images" type="file" accept="image/*" multiple />
-                <p class="field-help">Choose one or more images. A preview will appear below.</p>
-                <div class="image-preview" id="image-preview" aria-live="polite"></div>
+                <input
+                  id="images"
+                  name="images"
+                  type="file"
+                  accept="image/*"
+                  multiple
+                />
+                <p class="field-help">
+                  Choose one or more images. A preview will appear below.
+                </p>
+                <div
+                  class="image-preview"
+                  id="image-preview"
+                  aria-live="polite"
+                ></div>
               </div>
             </div>
 
             <p class="form-status" id="form-status" role="status" hidden></p>
 
             <div class="form-actions">
-              <a class="admin-secondary-action" href="admin-announcements.html">Cancel</a>
-              <button class="admin-primary-action" type="submit">Save announcement</button>
+              <a class="admin-secondary-action" href="admin-announcements.html"
+                >Cancel</a
+              >
+              <button class="admin-primary-action" type="submit">
+                Publish announcement
+              </button>
             </div>
           </form>
         </main>
