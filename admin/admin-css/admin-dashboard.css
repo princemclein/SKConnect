@@ -170,13 +170,45 @@ body {
 
 @media (max-width: 768px) {
   .admin-sidebar {
+    width: min(18rem, 86vw);
+    padding: 1.25rem 1rem;
     transform: translateX(-100%);
     transition: transform 160ms ease;
   }
 
   .admin-sidebar.is-open {
     transform: translateX(0);
-    box-shadow: 0 0 0 100vmax rgba(15, 23, 42, 0.35);
+    box-shadow: 0.75rem 0 2rem rgba(15, 23, 42, 0.2),
+      0 0 0 100vmax rgba(15, 23, 42, 0.35);
+  }
+
+  .admin-brand {
+    padding: 0.5rem 0.75rem 1.25rem;
+    border-bottom: 1px solid rgba(191, 219, 254, 0.18);
+  }
+
+  .admin-brand img {
+    display: none;
+  }
+
+  .admin-navigation {
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+  }
+
+  .admin-navigation-link {
+    padding: 0.9rem 0.85rem;
+  }
+
+  .admin-navigation-link:hover,
+  .admin-navigation-link:focus-visible,
+  .admin-navigation-link.is-active {
+    background: rgba(255, 255, 255, 0.16);
+  }
+
+  .admin-logout {
+    margin-top: auto;
+    padding: 0.85rem 0.75rem;
   }
 
   .admin-main {
