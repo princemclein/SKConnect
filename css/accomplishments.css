@@ -105,6 +105,30 @@
   margin: 0 auto;
 }
 
+/* Transparency Note */
+.projects-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-top: 2rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background: var(--color-white);
+  color: var(--color-muted);
+}
+
+.projects-note > i {
+  margin-top: 0.2rem;
+  color: var(--color-primary);
+}
+
+.projects-note p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.65;
+}
+
 /* Filters */
 .filter-bar {
   margin-bottom: 2rem;
