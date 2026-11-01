@@ -185,6 +185,9 @@ body {
   }
 
   .admin-header {
+    position: sticky;
+    top: 0;
+    z-index: 9;
     gap: 1rem;
     padding: 0 1.25rem;
   }
@@ -200,6 +203,21 @@ body {
     display: block;
     height: 2px;
     background: var(--color-black);
+    transition:
+      transform 160ms ease,
+      opacity 160ms ease;
+  }
+
+  .admin-menu-toggle[aria-expanded="true"] span:nth-child(1) {
+    transform: translateY(0.5rem) rotate(45deg);
+  }
+
+  .admin-menu-toggle[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .admin-menu-toggle[aria-expanded="true"] span:nth-child(3) {
+    transform: translateY(-0.5rem) rotate(-45deg);
   }
 
   .admin-content {
