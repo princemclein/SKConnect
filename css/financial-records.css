@@ -49,6 +49,14 @@
   display: flex;
 }
 
+.records-header .record-breadcrumb {
+  margin-bottom: 1.25rem;
+}
+
+.records-header .section-eyebrow {
+  display: block;
+}
+
 .records-header h1 {
   margin: 0;
   font-size: clamp(1.8rem, 5vw, 2.6rem);
