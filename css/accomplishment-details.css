@@ -507,6 +507,17 @@ main:not(:has(.project-detail:target)) #interpurok {
     width: min(100% - 2rem, 1180px); 
   }
 
+  .detail-header .breadcrumb {
+    gap: 0.45rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+
+  .detail-header .breadcrumb [aria-current="page"] {
+    display: inline;
+    overflow-wrap: anywhere;
+  }
+
   .detail-hero img {
     aspect-ratio: auto;
     height: auto;
