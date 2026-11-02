@@ -38,6 +38,17 @@
   font-weight: 700;
 }
 
+.records-header .record-breadcrumb {
+  display: none;
+}
+
+.records-header:not(:has(~ .records-container .record-project:target)) #breadcrumb-interpurok,
+.records-header:has(~ .records-container #interpurok:target) #breadcrumb-interpurok,
+.records-header:has(~ .records-container #cleanup:target) #breadcrumb-cleanup,
+.records-header:has(~ .records-container #balagtasan:target) #breadcrumb-balagtasan {
+  display: flex;
+}
+
 .records-header h1 {
   margin: 0;
   font-size: clamp(1.8rem, 5vw, 2.6rem);
