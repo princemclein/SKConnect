@@ -151,9 +151,30 @@
             </div>
 
             <div class="form-section">
+              <h2>Announcement page sections</h2>
+              <div class="form-field">
+                <label for="information">Announcement information <span>(one item per line: label | value)</span></label>
+                <textarea id="information" name="information" rows="5" placeholder="Service date | October 28, 2026"></textarea>
+              </div>
+              <div class="form-field">
+                <label for="instructions">How to participate</label>
+                <textarea id="instructions" name="instructions" rows="5"></textarea>
+              </div>
+              <div class="form-field">
+                <label for="reminders">Important reminders</label>
+                <textarea id="reminders" name="reminders" rows="5"></textarea>
+              </div>
+            </div>
+
+            <div class="form-section">
               <h2>Announcement images</h2>
               <div class="form-field">
-                <label for="images">Images</label>
+                <label for="featured-image">Featured image</label>
+                <input id="featured-image" name="featured-image" type="file" accept="image/*" />
+                <p class="field-help">This image appears first as the large image at the top of the announcement details page.</p>
+              </div>
+              <div class="form-field">
+                <label for="images">Gallery images <span>(optional)</span></label>
                 <input
                   id="images"
                   name="images"
