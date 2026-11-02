@@ -136,6 +136,11 @@ td[colspan] {
   text-align: center;
 }
 
+.record-total td[colspan] {
+  color: var(--color-black);
+  text-align: left;
+}
+
 .record-note {
   margin: 1rem 0;
   color: var(--color-muted);
