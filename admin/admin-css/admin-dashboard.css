@@ -98,6 +98,9 @@ body {
 
 .admin-header {
   display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 11;
   min-height: 4.5rem;
   align-items: center;
   border-bottom: 1px solid var(--color-border);
@@ -112,8 +115,8 @@ body {
 }
 
 .admin-header-logos img {
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 2.75rem;
+  height: 2.75rem;
   object-fit: contain;
 }
 
@@ -478,9 +481,6 @@ body {
   }
 
   .admin-header {
-    position: sticky;
-    top: 0;
-    z-index: 11;
     gap: 1rem;
     padding: 0 1.25rem;
   }
@@ -539,8 +539,8 @@ body {
   }
 
   .admin-header-logos img {
-    width: 1.85rem;
-    height: 1.85rem;
+    width: 2.25rem;
+    height: 2.25rem;
   }
 
   .admin-menu-toggle {
@@ -550,20 +550,67 @@ body {
 
   .dashboard-stats {
     grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
   }
 
   .dashboard-stat {
-    min-height: 8.5rem;
-    padding: 1.5rem;
+    min-height: 0;
+    padding: 1.25rem;
+  }
+
+  .dashboard-stat strong {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .dashboard-stat > span:last-child,
+  .dashboard-stat a {
+    margin-top: 0.6rem;
   }
 
   .dashboard-panel-heading {
     flex-direction: column;
   }
 
+  .dashboard-panel {
+    padding: 1.25rem;
+  }
+
+  .dashboard-panel h2 {
+    font-size: 1.1rem;
+  }
+
+  .dashboard-grid,
+  .dashboard-review-panel {
+    margin-top: 0.75rem;
+  }
+
+  .quick-actions {
+    margin-top: 1rem;
+  }
+
+  .quick-action {
+    align-items: flex-start;
+    padding: 0.7rem;
+  }
+
+  .activity-list li {
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.65rem;
+  }
+
+  .activity-list time {
+    grid-column: 2;
+  }
+
   .review-list li {
     align-items: flex-start;
     flex-wrap: wrap;
+  }
+
+  .review-list p {
+    overflow-wrap: anywhere;
   }
 
   .review-count {
