@@ -208,6 +208,7 @@
 
   .form-actions a,
   .form-actions button {
+    width: 100%;
     text-align: center;
   }
 }
