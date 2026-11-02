@@ -425,6 +425,11 @@ main:not(:has(.project-detail:target)) #interpurok {
   font-size: 0.8rem;
 }
 
+.finance-details-link {
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
 /* Contact */
 .contact-actions {
   display: flex;
