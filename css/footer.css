@@ -1,6 +1,6 @@
 /* Footer */
 .site-footer {
-  padding: 4rem 1.5rem 0;
+  padding: 3rem 1.5rem 0;
   background: var(--color-black);
   color: var(--color-white);
 }
@@ -10,7 +10,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 2fr 1fr 1.5fr;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .footer-logo {
@@ -72,8 +72,8 @@
 /* Developed by */
 .footer-developer {
   max-width: 1200px;
-  margin: 3rem auto 0;
-  padding-top: 2rem;
+  margin: 2.25rem auto 0;
+  padding-top: 1.5rem;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   display: flex;
   flex-direction: column;
@@ -110,8 +110,8 @@
 
 .footer-bottom {
   max-width: 1200px;
-  margin: 1.5rem auto 0;
-  padding: 1.25rem 0;
+  margin: 1.25rem auto 0;
+  padding: 1rem 0;
   text-align: center;
 }
 
@@ -121,8 +121,80 @@
   font-size: 0.85rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  .site-footer {
+    padding: 2.5rem 1.25rem 0;
+  }
+
+  .footer-container {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 1.75rem 2.5rem;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    column-gap: 1.5rem;
+    align-items: start;
+  }
+
+  .footer-brand p {
+    margin-top: 0;
+  }
+
+  .footer-partners {
+    grid-column: 2;
+    margin-top: 1rem;
+  }
+
+  .footer-col h4 {
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-developer {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-footer {
+    padding: 2.25rem 1rem 0;
+  }
+
   .footer-container {
     grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .footer-brand {
+    display: block;
+    grid-column: auto;
+  }
+
+  .footer-brand p {
+    margin-top: 0.85rem;
+  }
+
+  .footer-partners {
+    margin-top: 1.1rem;
+  }
+
+  .footer-developer {
+    margin-top: 1.75rem;
+    padding-top: 1.25rem;
+  }
+
+  .developer-brand {
+    gap: 0.75rem;
+  }
+
+  .developer-brand img {
+    height: 2.5rem;
+  }
+
+  .developer-tagline {
+    padding-left: 0.75rem;
+    font-size: 0.9rem;
   }
 }
