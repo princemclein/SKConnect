@@ -105,11 +105,16 @@ body {
   padding: 0 2.5rem;
 }
 
-.admin-header-label {
-  margin: 0;
-  color: var(--color-muted);
-  font-size: 0.85rem;
-  font-weight: 700;
+.admin-header-logos {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.admin-header-logos img {
+  width: 2.25rem;
+  height: 2.25rem;
+  object-fit: contain;
 }
 
 .admin-menu-toggle {
@@ -480,7 +485,7 @@ body {
     padding: 0 1.25rem;
   }
 
-  .admin-header-label {
+  .admin-header-logos {
     order: 1;
   }
 
@@ -524,6 +529,25 @@ body {
 }
 
 @media (max-width: 520px) {
+  .admin-header {
+    gap: 0.5rem;
+    padding: 0 0.75rem;
+  }
+
+  .admin-header-logos {
+    gap: 0.35rem;
+  }
+
+  .admin-header-logos img {
+    width: 1.85rem;
+    height: 1.85rem;
+  }
+
+  .admin-menu-toggle {
+    width: 2.25rem;
+    padding: 0.4rem;
+  }
+
   .dashboard-stats {
     grid-template-columns: 1fr;
   }
