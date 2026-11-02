@@ -255,7 +255,18 @@ function renderGallery(images) {
       if (i === active)
         button.scrollIntoView({ block: "nearest", inline: "nearest" });
     });
-    prev.hidden = next.hidden = images.length < 2;
+    const galleryDisabled = images.length < 2;
+    prev.disabled = next.disabled = galleryDisabled;
+    prev.setAttribute(
+      "aria-label",
+      galleryDisabled
+        ? "Previous image, only one image available"
+        : "Previous image",
+    );
+    next.setAttribute(
+      "aria-label",
+      galleryDisabled ? "Next image, only one image available" : "Next image",
+    );
     document.getElementById("lightbox-previous").hidden = images.length < 2;
     document.getElementById("lightbox-next").hidden = images.length < 2;
   }
