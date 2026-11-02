@@ -114,6 +114,10 @@
   font-size: 0.68rem;
 }
 
+.record-meta .record-status-pending {
+  color: #c2410c;
+}
+
 .record-body h3 {
   margin: 0.65rem 0 0;
   color: var(--color-black);

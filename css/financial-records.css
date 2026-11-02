@@ -111,6 +111,25 @@
   font-weight: 700;
 }
 
+.record-status-pending {
+  background: #ffedd5;
+  color: #c2410c;
+}
+
+.record-pending-message {
+  margin: 0;
+  border: 1px solid #fed7aa;
+  border-radius: 0.5rem;
+  background: #fffaf5;
+  padding: 1rem;
+  color: #9a3412;
+  line-height: 1.6;
+}
+
+.record-pending-message i {
+  margin-right: 0.4rem;
+}
+
 .record-total td {
   color: var(--color-black);
   font-weight: 700;
