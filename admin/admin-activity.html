@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="admin-css/admin-dashboard.css" />
+    <title>Activity | Admin | SKConnect</title>
+  </head>
+
+  <body>
+    <div class="admin-shell">
+      <aside class="admin-sidebar" id="admin-sidebar">
+        <div class="admin-brand">
+          <img src="../assets/images/favicon.png" alt="" />
+          <span>SKConnect Admin</span>
+        </div>
+
+        <nav class="admin-navigation" aria-label="Admin navigation">
+          <a class="admin-navigation-link" href="admin-dashboard.html">Dashboard</a>
+          <a class="admin-navigation-link" href="admin-announcements.html">
+            Announcements
+          </a>
+          <a class="admin-navigation-link" href="admin-accomplishments.html">
+            Accomplishments
+          </a>
+          <a class="admin-navigation-link" href="admin-settings.html">Settings</a>
+        </nav>
+
+        <a class="admin-logout" href="../index.html">Log out</a>
+      </aside>
+
+      <div class="admin-main">
+        <header class="admin-header">
+          <button
+            class="admin-menu-toggle"
+            type="button"
+            aria-label="Open admin navigation"
+            aria-expanded="false"
+            aria-controls="admin-sidebar"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="admin-header-logos" aria-label="SK Council and Barangay Council">
+            <img src="../assets/images/skcouncil_logo.png" alt="SK Council logo" />
+            <img src="../assets/images/brgycouncil_logo.png" alt="Barangay Council logo" />
+          </div>
+        </header>
+
+        <main class="admin-content">
+          <div class="admin-page-heading">
+            <p class="admin-eyebrow">Content timeline</p>
+            <h1>Activity</h1>
+            <p>Review the latest announcements and accomplishments published on SKConnect.</p>
+          </div>
+
+          <section class="dashboard-panel activity-page-panel" aria-labelledby="activity-page-title">
+            <div class="dashboard-panel-heading">
+              <div>
+                <h2 id="activity-page-title">All activity</h2>
+                <p class="dashboard-panel-description">
+                  A record of the content currently displayed on the public website.
+                </p>
+              </div>
+            </div>
+
+            <ul class="activity-list activity-page-list">
+              <li>
+                <span class="activity-dot"></span>
+                <div><strong>Check-Consult-Cure</strong><p>Announcement published</p></div>
+                <time datetime="2026-10-23">October 23, 2026</time>
+              </li>
+              <li>
+                <span class="activity-dot"></span>
+                <div><strong>Free Haircut Services</strong><p>Announcement published</p></div>
+                <time datetime="2026-10-22">October 22, 2026</time>
+              </li>
+              <li>
+                <span class="activity-dot"></span>
+                <div><strong>SK Barangay Employment Program</strong><p>Announcement published</p></div>
+                <time datetime="2026-10-21">October 21, 2026</time>
+              </li>
+              <li>
+                <span class="activity-dot"></span>
+                <div><strong>Libreng Sakay Year 3</strong><p>Announcement published</p></div>
+                <time datetime="2026-10-20">October 20, 2026</time>
+              </li>
+              <li>
+                <span class="activity-dot"></span>
+                <div><strong>Seminar on Creating an Effective Resume</strong><p>Announcement published</p></div>
+                <time datetime="2026-10-19">October 19, 2026</time>
+              </li>
+              <li>
+                <span class="activity-dot"></span>
+                <div><strong>Educational Assistance</strong><p>Announcement published</p></div>
+                <time datetime="2026-10-18">October 18, 2026</time>
+              </li>
+              <li>
+                <span class="activity-dot"></span>
+                <div><strong>Amazing Race</strong><p>Announcement published</p></div>
+                <time datetime="2026-10-17">October 17, 2026</time>
+              </li>
+              <li>
+                <span class="activity-dot activity-dot-project"></span>
+                <div><strong>Clean-Up-Drive</strong><p>Accomplishment completed</p></div>
+                <time datetime="2026-10-10">October 10, 2026</time>
+              </li>
+              <li>
+                <span class="activity-dot activity-dot-project"></span>
+                <div><strong>Ikatlong Yugto ng Balagtasan</strong><p>Accomplishment completed</p></div>
+                <time datetime="2026-08-21">August 21, 2026</time>
+              </li>
+              <li>
+                <span class="activity-dot activity-dot-project"></span>
+                <div><strong>Interpurok-Basketball-League</strong><p>Accomplishment completed</p></div>
+                <time datetime="2025-12-07">December 7, 2025</time>
+              </li>
+            </ul>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="admin-js/admin-dashboard.js"></script>
+  </body>
+</html>
