@@ -58,12 +58,120 @@
             <p>Manage SKConnect content for the youth of Barangay Sta. Rita.</p>
           </div>
 
-          <section class="admin-empty-content" aria-labelledby="dashboard-content-title">
-            <h2 id="dashboard-content-title">Dashboard overview</h2>
-            <p>
-              Dashboard statistics and recent activity will appear here as the
-              administrative features are added.
-            </p>
+          <section class="dashboard-stats" aria-label="Content summary">
+            <article class="dashboard-stat">
+              <span class="dashboard-stat-label">Published announcements</span>
+              <strong>7</strong>
+              <a href="admin-announcements.html">Manage announcements</a>
+            </article>
+            <article class="dashboard-stat">
+              <span class="dashboard-stat-label">Published accomplishments</span>
+              <strong>3</strong>
+              <a href="admin-accomplishments.html">Manage accomplishments</a>
+            </article>
+            <article class="dashboard-stat dashboard-stat-warning">
+              <span class="dashboard-stat-label">Documentation follow-ups</span>
+              <strong>3</strong>
+              <span>Financial records not yet available</span>
+            </article>
+            <article class="dashboard-stat">
+              <span class="dashboard-stat-label">Total published content</span>
+              <strong>10</strong>
+              <span>7 announcements and 3 accomplishments</span>
+            </article>
+          </section>
+
+          <div class="dashboard-grid">
+            <section class="dashboard-panel" aria-labelledby="quick-actions-title">
+              <div class="dashboard-panel-heading">
+                <div>
+                  <p class="dashboard-panel-eyebrow">Get started</p>
+                  <h2 id="quick-actions-title">Quick actions</h2>
+                </div>
+              </div>
+              <div class="quick-actions">
+                <a class="quick-action" href="admin-add-announcements.html">
+                  <span class="quick-action-icon" aria-hidden="true">+</span>
+                  <span>
+                    <strong>Add announcement</strong>
+                    <small>Share an update with the community</small>
+                  </span>
+                </a>
+                <a class="quick-action" href="admin-add-accomplishments.html">
+                  <span class="quick-action-icon" aria-hidden="true">+</span>
+                  <span>
+                    <strong>Add accomplishment</strong>
+                    <small>Record a completed SK project</small>
+                  </span>
+                </a>
+                <a class="quick-action" href="../index.html">
+                  <span class="quick-action-icon quick-action-icon-view" aria-hidden="true">></span>
+                  <span>
+                    <strong>View public website</strong>
+                    <small>See how visitors see your content</small>
+                  </span>
+                </a>
+              </div>
+            </section>
+
+            <section class="dashboard-panel" aria-labelledby="activity-title">
+              <div class="dashboard-panel-heading">
+                <div>
+                  <p class="dashboard-panel-eyebrow">Content timeline</p>
+                  <h2 id="activity-title">Recent activity</h2>
+                </div>
+                <a class="dashboard-panel-link" href="admin-announcements.html">View all</a>
+              </div>
+              <ul class="activity-list">
+                <li>
+                  <span class="activity-dot"></span>
+                  <div>
+                    <strong>Check-Consult-Cure</strong>
+                    <p>Announcement published</p>
+                  </div>
+                  <time datetime="2026-10-23">Oct 23</time>
+                </li>
+                <li>
+                  <span class="activity-dot"></span>
+                  <div>
+                    <strong>Free Haircut Services</strong>
+                    <p>Announcement published</p>
+                  </div>
+                  <time datetime="2026-10-22">Oct 22</time>
+                </li>
+                <li>
+                  <span class="activity-dot activity-dot-project"></span>
+                  <div>
+                    <strong>Clean-Up-Drive</strong>
+                    <p>Accomplishment completed</p>
+                  </div>
+                  <time datetime="2026-10-10">Oct 10</time>
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          <section class="dashboard-panel dashboard-review-panel" aria-labelledby="review-title">
+            <div class="dashboard-panel-heading">
+              <div>
+                <p class="dashboard-panel-eyebrow">Transparency checklist</p>
+                <h2 id="review-title">Items that need attention</h2>
+                <p class="dashboard-panel-description">
+                  Keep project records complete and ready for public review.
+                </p>
+              </div>
+              <a class="admin-secondary-action" href="admin-accomplishments.html">Review records</a>
+            </div>
+            <ul class="review-list">
+              <li>
+                <span class="review-status" aria-hidden="true">!</span>
+                <div>
+                  <strong>Add financial records to published accomplishments</strong>
+                  <p>Interpurok-Basketball-League, Clean-Up-Drive, and Ikatlong Yugto ng Balagtasan</p>
+                </div>
+                <span class="review-count">3 projects</span>
+              </li>
+            </ul>
           </section>
         </main>
       </div>
