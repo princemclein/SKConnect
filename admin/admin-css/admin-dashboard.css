@@ -373,6 +373,17 @@ body {
   margin-top: 2.5rem;
 }
 
+.activity-back-link {
+  display: inline-block;
+  margin-top: 1.25rem;
+  padding: 0.45rem 0.7rem;
+}
+
+.activity-back-link i {
+  margin-right: 0.3rem;
+  font-style: normal;
+}
+
 .activity-page-list li {
   padding: 1rem 0;
 }
