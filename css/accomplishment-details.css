@@ -497,6 +497,12 @@ main:not(:has(.project-detail:target)) #interpurok {
     width: min(100% - 2rem, 1180px); 
   }
 
+  .detail-hero img {
+    aspect-ratio: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
   .project-detail .detail-container {
     width: min(100% - 2rem, 1180px);
     padding: 0 0 3rem;
