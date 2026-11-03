@@ -94,9 +94,69 @@
 
       <section class="accomplishments">
         <div class="accomplishments-container">
-          <div class="accomplishments-grid">
+          <div class="filter-bar" id="filter-bar">
+            <div class="filters" role="group" aria-label="Filter by category">
+              <button
+                class="filter-btn"
+                type="button"
+                data-category="All"
+                aria-pressed="true"
+              >
+                All
+              </button>
+
+              <button
+                class="filter-btn"
+                type="button"
+                data-category="Education"
+                aria-pressed="false"
+              >
+                Education
+              </button>
+
+              <button
+                class="filter-btn"
+                type="button"
+                data-category="Event"
+                aria-pressed="false"
+              >
+                Event
+              </button>
+
+              <button
+                class="filter-btn"
+                type="button"
+                data-category="Training"
+                aria-pressed="false"
+              >
+                Training
+              </button>
+
+              <button
+                class="filter-btn"
+                type="button"
+                data-category="Employment"
+                aria-pressed="false"
+              >
+                Employment
+              </button>
+
+              <button
+                class="filter-btn"
+                type="button"
+                data-category="Assistance"
+                aria-pressed="false"
+              >
+                Assistance
+              </button>
+            </div>
+
+            <p class="results-count" id="results-count" aria-live="polite"></p>
+          </div>
+
+          <div class="accomplishments-grid" id="accomplishments-grid">
             <!-- Accomplishment 1 -->
-            <article class="accomplishments-cards" data-category="sports">
+            <article class="accomplishments-cards" data-category="Event">
               <div class="card-thumb">
                 <img
                   src="assets/images/accomplishment/inter-purok.png"
@@ -108,7 +168,7 @@
               <div class="card-body">
                 <div class="tags">
                   <span class="status-tags">Completed</span>
-                  <span class="card-category">Sports</span>
+                  <span class="card-category">Event</span>
                 </div>
 
                 <h3 class="card-title">Interpurok-Basketball-League</h3>
@@ -143,7 +203,7 @@
             </article>
 
             <!-- Accomplishment 2 -->
-            <article class="accomplishments-cards" data-category="Environment">
+            <article class="accomplishments-cards" data-category="Assistance">
               <div class="card-thumb">
                 <img
                   src="assets/images/accomplishment/clean-up-drive.png"
@@ -155,7 +215,7 @@
               <div class="card-body">
                 <div class="tags">
                   <span class="status-tags">Completed</span>
-                  <span class="card-category">Environment</span>
+                  <span class="card-category">Assistance</span>
                 </div>
 
                 <h3 class="card-title">Clean-Up-Drive</h3>
@@ -191,7 +251,7 @@
             <!-- Accomplishment 3 -->
             <article
               class="accomplishments-cards"
-              data-category="Culture and arts"
+              data-category="Event"
             >
               <div class="card-thumb">
                 <img
@@ -204,9 +264,8 @@
               <div class="card-body">
                 <div class="tags">
                   <span class="status-tags">Completed</span>
-                  <span class="card-category">Culture and arts</span>
+                  <span class="card-category">Event</span>
                 </div>
-
                 <h3 class="card-title">Ikatlong Yugto ng Balagtasan</h3>
                 <p class="card-desc">
                   A youth debate contest on Sipag o Talino for secondary and
@@ -238,6 +297,28 @@
             </article>
           </div>
 
+          <!-- Empty State -->
+          <div class="empty-state" id="empty-state" hidden>
+            <div class="empty-icon">
+              <i class="fa-solid fa-folder-open"></i>
+            </div>
+
+            <h3>No accomplishments yet</h3>
+            <p>Please check back soon.</p>
+
+            <button class="btn-details" id="reset-filter" type="button">
+              View all accomplishments
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <!-- Pagination -->
+          <nav
+            class="pagination"
+            id="pagination"
+            aria-label="Pagination"
+            hidden
+          ></nav>
         </div>
       </section>
     </main>
@@ -330,6 +411,7 @@
         </p>
       </div>
     </footer>
+    <script src="js/accomplishments.js" defer></script>
     <script src="js/header.js" defer></script>
     <script src="js/scrolltotop.js" defer></script>
   </body>
