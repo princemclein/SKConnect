@@ -81,7 +81,6 @@ main:not(:has(.project-detail:target)) #interpurok {
 .detail-header h1 {
   margin: 0;
   font-size: clamp(1.8rem, 5vw, 2.6rem);
-  font-weight: 800;
   letter-spacing: -0.03em;
 }
 
